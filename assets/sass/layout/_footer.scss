@@ -1,0 +1,48 @@
+.content{
+  &__newsletter{
+    background-color: $smoky-black;
+    color: $white;
+    position: relative;
+  }
+  &__form{
+    padding: 1em 8em 1em 3em;
+    h2{
+      font-size: $font-size-xx-large;
+      margin-bottom: 0.5em;
+    }
+    label{
+      display: block;
+      margin-bottom: 1em;
+    }
+    input{
+      padding: 0.5em 1em;
+      width: 60%;
+      border: 0;
+      border-radius: 0;
+      &::placeholder{
+        font-family: $raleway;
+      }
+    }
+  }
+  &__subscription{
+    background-color: #FFF;
+    color: #0C0910;
+    position: absolute;
+    padding: 2em;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    right: -36px;
+    top: 30px;
+    bottom: 58px;
+    transform: rotate(0.25turn);
+  }
+}
+
+@media (min-width: 992px) {
+  .content__newsletter {
+    position: fixed;
+    width: 45%;
+    bottom: 0;
+  }
+}
